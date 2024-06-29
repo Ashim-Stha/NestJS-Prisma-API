@@ -20,3 +20,6 @@ npx prisma migrate dev --name init
 
 
 nest g resource employees
+
+//rate limiter
+npm i @nestjs/throttler
