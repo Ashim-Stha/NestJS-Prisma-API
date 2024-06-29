@@ -5,5 +5,15 @@ nest g service users
 //for DTO
 npm i @nestjs/mapped-types -D
 
-//
+//Validation
 npm i class-validator class-transformer
+
+//prisma
+npm i prisma -D
+npx prisma init
+
+npx prisma migrate dev --name init
+
+//to change something in schema
+npx prisma generate
+npx prisma migrate dev --name init
