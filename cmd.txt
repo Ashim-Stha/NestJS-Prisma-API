@@ -17,3 +17,6 @@ npx prisma migrate dev --name init
 //to change something in schema
 npx prisma generate
 npx prisma migrate dev --name init
+
+
+nest g resource employees
