@@ -31,7 +31,7 @@ export class EmployeesController {
     @Ip() ip: string,
     @Query('role') role?: 'INTERN' | 'ENGINEER' | 'ADMIN',
   ) {
-    this.logger.log(`request from ${ip}`);
+    this.logger.log(`request from ${ip}`, EmployeesController.name);
     return this.employeesService.findAll(role);
   }
 
